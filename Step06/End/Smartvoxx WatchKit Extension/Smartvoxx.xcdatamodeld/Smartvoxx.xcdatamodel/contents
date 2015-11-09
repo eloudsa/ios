@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Xcode 7.0">
+    <entity name="Conference" representedClassName=".Conference" syncable="YES">
+        <attribute name="eventCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="localisation" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="schedules" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Schedule" inverseName="conference" inverseEntity="Schedule" syncable="YES"/>
+    </entity>
+    <entity name="Schedule" representedClassName=".Schedule" syncable="YES">
+        <attribute name="href" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="conference" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Conference" inverseName="schedules" inverseEntity="Conference" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Schedule" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="Conference" positionX="-308" positionY="-33" width="128" height="103"/>
+    </elements>
+</model>

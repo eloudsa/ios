@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9056" systemVersion="15A284" minimumToolsVersion="Xcode 7.0">
+    <entity name="BreakSlot" representedClassName=".BreakSlot" parentEntity="Slot" syncable="YES">
+        <attribute name="breakId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameEN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameFR" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Conference" representedClassName=".Conference" syncable="YES">
+        <attribute name="eventCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="localisation" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="schedules" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Schedule" inverseName="conference" inverseEntity="Schedule" syncable="YES"/>
+    </entity>
+    <entity name="Schedule" representedClassName=".Schedule" syncable="YES">
+        <attribute name="href" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="conference" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Conference" inverseName="schedules" inverseEntity="Conference" syncable="YES"/>
+        <relationship name="slots" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Slot" inverseName="schedule" inverseEntity="Slot" syncable="YES"/>
+    </entity>
+    <entity name="Slot" representedClassName=".Slot" syncable="YES">
+        <attribute name="day" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fromTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fromTimeMillis" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="roomId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="roomName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="slotId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toTimeMillis" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="schedule" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Schedule" inverseName="slots" inverseEntity="Schedule" syncable="YES"/>
+    </entity>
+    <entity name="Speaker" representedClassName=".Speaker" syncable="YES">
+        <attribute name="avatar" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="avatarURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bioAsHtml" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="company" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="href" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="talks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TalkSlot" inverseName="speakers" inverseEntity="TalkSlot" syncable="YES"/>
+    </entity>
+    <entity name="TalkSlot" representedClassName=".TalkSlot" parentEntity="Slot" syncable="YES">
+        <attribute name="favorite" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="lang" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="summaryAsHtml" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="talkId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="talkType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="speakers" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Speaker" inverseName="talks" inverseEntity="Speaker" syncable="YES"/>
+        <relationship name="track" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Track" inverseName="talks" inverseEntity="Track" syncable="YES"/>
+    </entity>
+    <entity name="Track" representedClassName=".Track" syncable="YES">
+        <attribute name="color" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="talks" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="TalkSlot" inverseName="track" inverseEntity="TalkSlot" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BreakSlot" positionX="826" positionY="3701" width="128" height="88"/>
+        <element name="Conference" positionX="207" positionY="3312" width="128" height="103"/>
+        <element name="Schedule" positionX="477" positionY="3411" width="128" height="103"/>
+        <element name="Slot" positionX="729" positionY="3483" width="128" height="178"/>
+        <element name="Speaker" positionX="342" positionY="3761" width="128" height="208"/>
+        <element name="TalkSlot" positionX="549" positionY="3761" width="128" height="178"/>
+        <element name="Track" positionX="810" positionY="3923" width="128" height="88"/>
+    </elements>
+</model>

@@ -1,0 +1,1092 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B90FFB2A1BB83DC000EF13E7 /* SlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90FFB291BB83DC000EF13E7 /* SlotViewController.swift */; };
+		B917BF431BA8CAF000607458 /* TimeRangeRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B917BF421BA8CAF000607458 /* TimeRangeRowController.swift */; };
+		B917BF451BA8CB1500607458 /* SlotRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B917BF441BA8CB1500607458 /* SlotRowController.swift */; };
+		B91995C51BA5C8E400FEB34C /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91995C41BA5C8E400FEB34C /* ScheduleController.swift */; };
+		B963D9D81BE21E4300A28181 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B963D9D71BE21E4300A28181 /* CoreData.framework */; };
+		B99FA7B21BB6D0AA00807789 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99FA7B11BB6D0AA00807789 /* UIColorExtension.swift */; };
+		B99FA7B41BB6D9B900807789 /* SlotController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99FA7B31BB6D9B900807789 /* SlotController.swift */; };
+		B99FA7B61BB6DA3B00807789 /* SpeakerRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99FA7B51BB6DA3B00807789 /* SpeakerRowController.swift */; };
+		B99FA7B81BB6E20E00807789 /* SpeakerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99FA7B71BB6E20E00807789 /* SpeakerController.swift */; };
+		B9A2F9AA1BC9534B0058B7CD /* Track+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A2F9A81BC9534B0058B7CD /* Track+CoreDataProperties.swift */; };
+		B9A2F9AB1BC9534B0058B7CD /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A2F9A91BC9534B0058B7CD /* Track.swift */; };
+		B9BFE13B1BDE02B000279F09 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BFE13A1BDE02B000279F09 /* DataController.swift */; };
+		B9BFE13D1BDE03EC00279F09 /* DevoxxCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BFE13C1BDE03EC00279F09 /* DevoxxCache.swift */; };
+		B9BFE1401BDEC46A00279F09 /* DevoxxCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BFE13E1BDEC46A00279F09 /* DevoxxCache.swift */; };
+		B9BFE1411BDEC46A00279F09 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BFE13F1BDEC46A00279F09 /* DataController.swift */; };
+		B9C8D5C41BC016BE003B90DC /* Smartvoxx.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B9C8D5C21BC016BE003B90DC /* Smartvoxx.xcdatamodeld */; };
+		B9C8D6481BC169A3003B90DC /* TalkSlot+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C8D63C1BC169A3003B90DC /* TalkSlot+CoreDataProperties.swift */; };
+		B9C8D6491BC169A3003B90DC /* TalkSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C8D63D1BC169A3003B90DC /* TalkSlot.swift */; };
+		B9C8D64A1BC169A3003B90DC /* Speaker+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C8D63E1BC169A3003B90DC /* Speaker+CoreDataProperties.swift */; };
+		B9C8D64B1BC169A3003B90DC /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C8D63F1BC169A3003B90DC /* Speaker.swift */; };
+		B9C8D64C1BC169A3003B90DC /* Slot+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C8D6401BC169A3003B90DC /* Slot+CoreDataProperties.swift */; };
+		B9C8D64D1BC169A3003B90DC /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C8D6411BC169A3003B90DC /* Slot.swift */; };
+		B9C8D64E1BC169A3003B90DC /* Conference+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C8D6421BC169A3003B90DC /* Conference+CoreDataProperties.swift */; };
+		B9C8D64F1BC169A3003B90DC /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C8D6431BC169A3003B90DC /* Conference.swift */; };
+		B9C8D6501BC169A3003B90DC /* BreakSlot+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C8D6441BC169A3003B90DC /* BreakSlot+CoreDataProperties.swift */; };
+		B9C8D6511BC169A3003B90DC /* BreakSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C8D6451BC169A3003B90DC /* BreakSlot.swift */; };
+		B9C8D6521BC169A3003B90DC /* Schedule+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C8D6461BC169A3003B90DC /* Schedule+CoreDataProperties.swift */; };
+		B9C8D6531BC169A3003B90DC /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C8D6471BC169A3003B90DC /* Schedule.swift */; };
+		B9E543C81B9B8B430089AAF5 /* ScheduleRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E543C71B9B8B430089AAF5 /* ScheduleRowController.swift */; };
+		B9EF04691BCAC8CD003D3889 /* BreakSlot+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF045A1BCAC8CD003D3889 /* BreakSlot+CoreDataProperties.swift */; };
+		B9EF046A1BCAC8CD003D3889 /* BreakSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF045B1BCAC8CD003D3889 /* BreakSlot.swift */; };
+		B9EF046B1BCAC8CD003D3889 /* Conference+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF045C1BCAC8CD003D3889 /* Conference+CoreDataProperties.swift */; };
+		B9EF046C1BCAC8CD003D3889 /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF045D1BCAC8CD003D3889 /* Conference.swift */; };
+		B9EF046D1BCAC8CD003D3889 /* Schedule+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF045E1BCAC8CD003D3889 /* Schedule+CoreDataProperties.swift */; };
+		B9EF046E1BCAC8CD003D3889 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF045F1BCAC8CD003D3889 /* Schedule.swift */; };
+		B9EF046F1BCAC8CD003D3889 /* Slot+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF04601BCAC8CD003D3889 /* Slot+CoreDataProperties.swift */; };
+		B9EF04701BCAC8CD003D3889 /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF04611BCAC8CD003D3889 /* Slot.swift */; };
+		B9EF04711BCAC8CD003D3889 /* Speaker+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF04621BCAC8CD003D3889 /* Speaker+CoreDataProperties.swift */; };
+		B9EF04721BCAC8CD003D3889 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF04631BCAC8CD003D3889 /* Speaker.swift */; };
+		B9EF04731BCAC8CD003D3889 /* TalkSlot+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF04641BCAC8CD003D3889 /* TalkSlot+CoreDataProperties.swift */; };
+		B9EF04741BCAC8CD003D3889 /* TalkSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF04651BCAC8CD003D3889 /* TalkSlot.swift */; };
+		B9EF04751BCAC8CD003D3889 /* Track+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF04661BCAC8CD003D3889 /* Track+CoreDataProperties.swift */; };
+		B9EF04761BCAC8CD003D3889 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EF04671BCAC8CD003D3889 /* Track.swift */; };
+		B9EF04791BCAC8FD003D3889 /* Smartvoxx.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B9EF04771BCAC8FD003D3889 /* Smartvoxx.xcdatamodeld */; };
+		B9F15BEA1B8A051600A04FFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F15BE91B8A051600A04FFC /* AppDelegate.swift */; };
+		B9F15BEC1B8A051600A04FFC /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F15BEB1B8A051600A04FFC /* MasterViewController.swift */; };
+		B9F15BF11B8A051600A04FFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9F15BEF1B8A051600A04FFC /* Main.storyboard */; };
+		B9F15BF31B8A051600A04FFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9F15BF21B8A051600A04FFC /* Assets.xcassets */; };
+		B9F15BF61B8A051600A04FFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9F15BF41B8A051600A04FFC /* LaunchScreen.storyboard */; };
+		B9F15C011B8A051600A04FFC /* SmartvoxxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F15C001B8A051600A04FFC /* SmartvoxxTests.swift */; };
+		B9F15C0C1B8A051600A04FFC /* SmartvoxxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F15C0B1B8A051600A04FFC /* SmartvoxxUITests.swift */; };
+		B9F15C4B1B8A06CC00A04FFC /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F15C4A1B8A06CC00A04FFC /* ScheduleViewController.swift */; };
+		B9F15C561B8A0F1700A04FFC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9F15C541B8A0F1700A04FFC /* Interface.storyboard */; };
+		B9F15C581B8A0F1700A04FFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9F15C571B8A0F1700A04FFC /* Assets.xcassets */; };
+		B9F15C5F1B8A0F1700A04FFC /* SmartvoxxOnWrist Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B9F15C5E1B8A0F1700A04FFC /* SmartvoxxOnWrist Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B9F15C661B8A0F1700A04FFC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F15C651B8A0F1700A04FFC /* InterfaceController.swift */; };
+		B9F15C681B8A0F1700A04FFC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F15C671B8A0F1700A04FFC /* ExtensionDelegate.swift */; };
+		B9F15C6A1B8A0F1700A04FFC /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F15C691B8A0F1700A04FFC /* NotificationController.swift */; };
+		B9F15C6C1B8A0F1700A04FFC /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F15C6B1B8A0F1700A04FFC /* GlanceController.swift */; };
+		B9F15C6E1B8A0F1700A04FFC /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F15C6D1B8A0F1700A04FFC /* ComplicationController.swift */; };
+		B9F15C701B8A0F1700A04FFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9F15C6F1B8A0F1700A04FFC /* Assets.xcassets */; };
+		B9F15C741B8A0F1700A04FFC /* SmartvoxxOnWrist.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B9F15C521B8A0F1700A04FFC /* SmartvoxxOnWrist.app */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9F15BFD1B8A051600A04FFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9F15BDE1B8A051600A04FFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9F15BE51B8A051600A04FFC;
+			remoteInfo = Smartvoxx;
+		};
+		B9F15C081B8A051600A04FFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9F15BDE1B8A051600A04FFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9F15BE51B8A051600A04FFC;
+			remoteInfo = Smartvoxx;
+		};
+		B9F15C601B8A0F1700A04FFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9F15BDE1B8A051600A04FFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9F15C5D1B8A0F1700A04FFC;
+			remoteInfo = "SmartvoxxOnWrist Extension";
+		};
+		B9F15C721B8A0F1700A04FFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9F15BDE1B8A051600A04FFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9F15C511B8A0F1700A04FFC;
+			remoteInfo = SmartvoxxOnWrist;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B98CBCDC1B9B7C9100518E04 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98CBD0F1B9B867700518E04 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9F15C781B8A0F1700A04FFC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B9F15C5F1B8A0F1700A04FFC /* SmartvoxxOnWrist Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9F15C7C1B8A0F1700A04FFC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B9F15C741B8A0F1700A04FFC /* SmartvoxxOnWrist.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B90FFB271BB731B200EF13E7 /* SmartvoxxOnWrist.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SmartvoxxOnWrist.entitlements; sourceTree = "<group>"; };
+		B90FFB281BB731C800EF13E7 /* SmartvoxxOnWrist Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "SmartvoxxOnWrist Extension.entitlements"; sourceTree = "<group>"; };
+		B90FFB291BB83DC000EF13E7 /* SlotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotViewController.swift; sourceTree = "<group>"; };
+		B917BF421BA8CAF000607458 /* TimeRangeRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeRangeRowController.swift; sourceTree = "<group>"; };
+		B917BF441BA8CB1500607458 /* SlotRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotRowController.swift; sourceTree = "<group>"; };
+		B91995C41BA5C8E400FEB34C /* ScheduleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
+		B963D9D71BE21E4300A28181 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B99FA7B11BB6D0AA00807789 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		B99FA7B31BB6D9B900807789 /* SlotController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotController.swift; sourceTree = "<group>"; };
+		B99FA7B51BB6DA3B00807789 /* SpeakerRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerRowController.swift; sourceTree = "<group>"; };
+		B99FA7B71BB6E20E00807789 /* SpeakerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerController.swift; sourceTree = "<group>"; };
+		B99FA7BB1BB72AF400807789 /* Smartvoxx.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Smartvoxx.entitlements; sourceTree = "<group>"; };
+		B9A2F9A81BC9534B0058B7CD /* Track+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Track+CoreDataProperties.swift"; path = "ManagedObjects/Track+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B9A2F9A91BC9534B0058B7CD /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Track.swift; path = ManagedObjects/Track.swift; sourceTree = "<group>"; };
+		B9BFE13A1BDE02B000279F09 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		B9BFE13C1BDE03EC00279F09 /* DevoxxCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevoxxCache.swift; sourceTree = "<group>"; };
+		B9BFE13E1BDEC46A00279F09 /* DevoxxCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevoxxCache.swift; sourceTree = "<group>"; };
+		B9BFE13F1BDEC46A00279F09 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		B9C8D5C31BC016BE003B90DC /* Smartvoxx.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Smartvoxx.xcdatamodel; sourceTree = "<group>"; };
+		B9C8D63C1BC169A3003B90DC /* TalkSlot+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TalkSlot+CoreDataProperties.swift"; path = "ManagedObjects/TalkSlot+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B9C8D63D1BC169A3003B90DC /* TalkSlot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TalkSlot.swift; path = ManagedObjects/TalkSlot.swift; sourceTree = "<group>"; };
+		B9C8D63E1BC169A3003B90DC /* Speaker+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Speaker+CoreDataProperties.swift"; path = "ManagedObjects/Speaker+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B9C8D63F1BC169A3003B90DC /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Speaker.swift; path = ManagedObjects/Speaker.swift; sourceTree = "<group>"; };
+		B9C8D6401BC169A3003B90DC /* Slot+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Slot+CoreDataProperties.swift"; path = "ManagedObjects/Slot+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B9C8D6411BC169A3003B90DC /* Slot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Slot.swift; path = ManagedObjects/Slot.swift; sourceTree = "<group>"; };
+		B9C8D6421BC169A3003B90DC /* Conference+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Conference+CoreDataProperties.swift"; path = "ManagedObjects/Conference+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B9C8D6431BC169A3003B90DC /* Conference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Conference.swift; path = ManagedObjects/Conference.swift; sourceTree = "<group>"; };
+		B9C8D6441BC169A3003B90DC /* BreakSlot+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "BreakSlot+CoreDataProperties.swift"; path = "ManagedObjects/BreakSlot+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B9C8D6451BC169A3003B90DC /* BreakSlot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BreakSlot.swift; path = ManagedObjects/BreakSlot.swift; sourceTree = "<group>"; };
+		B9C8D6461BC169A3003B90DC /* Schedule+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Schedule+CoreDataProperties.swift"; path = "ManagedObjects/Schedule+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B9C8D6471BC169A3003B90DC /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Schedule.swift; path = ManagedObjects/Schedule.swift; sourceTree = "<group>"; };
+		B9E543C71B9B8B430089AAF5 /* ScheduleRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleRowController.swift; sourceTree = "<group>"; };
+		B9EF045A1BCAC8CD003D3889 /* BreakSlot+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BreakSlot+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B9EF045B1BCAC8CD003D3889 /* BreakSlot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreakSlot.swift; sourceTree = "<group>"; };
+		B9EF045C1BCAC8CD003D3889 /* Conference+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Conference+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B9EF045D1BCAC8CD003D3889 /* Conference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conference.swift; sourceTree = "<group>"; };
+		B9EF045E1BCAC8CD003D3889 /* Schedule+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Schedule+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B9EF045F1BCAC8CD003D3889 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		B9EF04601BCAC8CD003D3889 /* Slot+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Slot+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B9EF04611BCAC8CD003D3889 /* Slot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
+		B9EF04621BCAC8CD003D3889 /* Speaker+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Speaker+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B9EF04631BCAC8CD003D3889 /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
+		B9EF04641BCAC8CD003D3889 /* TalkSlot+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TalkSlot+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B9EF04651BCAC8CD003D3889 /* TalkSlot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkSlot.swift; sourceTree = "<group>"; };
+		B9EF04661BCAC8CD003D3889 /* Track+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Track+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B9EF04671BCAC8CD003D3889 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		B9EF04781BCAC8FD003D3889 /* Smartvoxx.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Smartvoxx.xcdatamodel; sourceTree = "<group>"; };
+		B9F15BE61B8A051600A04FFC /* Smartvoxx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smartvoxx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9F15BE91B8A051600A04FFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B9F15BEB1B8A051600A04FFC /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		B9F15BF01B8A051600A04FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9F15BF21B8A051600A04FFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9F15BF51B8A051600A04FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B9F15BF71B8A051600A04FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9F15BFC1B8A051600A04FFC /* SmartvoxxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartvoxxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9F15C001B8A051600A04FFC /* SmartvoxxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartvoxxTests.swift; sourceTree = "<group>"; };
+		B9F15C021B8A051600A04FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9F15C071B8A051600A04FFC /* SmartvoxxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartvoxxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9F15C0B1B8A051600A04FFC /* SmartvoxxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartvoxxUITests.swift; sourceTree = "<group>"; };
+		B9F15C0D1B8A051600A04FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9F15C4A1B8A06CC00A04FFC /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		B9F15C4E1B8A0A7300A04FFC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B9F15C521B8A0F1700A04FFC /* SmartvoxxOnWrist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartvoxxOnWrist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9F15C551B8A0F1700A04FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B9F15C571B8A0F1700A04FFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9F15C591B8A0F1700A04FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9F15C5E1B8A0F1700A04FFC /* SmartvoxxOnWrist Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SmartvoxxOnWrist Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9F15C641B8A0F1700A04FFC /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B9F15C651B8A0F1700A04FFC /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B9F15C671B8A0F1700A04FFC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B9F15C691B8A0F1700A04FFC /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B9F15C6B1B8A0F1700A04FFC /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		B9F15C6D1B8A0F1700A04FFC /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		B9F15C6F1B8A0F1700A04FFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9F15C711B8A0F1700A04FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B98CBCD81B9B7C9100518E04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9F15BE31B8A051600A04FFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B963D9D81BE21E4300A28181 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9F15BF91B8A051600A04FFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9F15C041B8A051600A04FFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9F15C5B1B8A0F1700A04FFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9C8D60B1BC06D33003B90DC /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				B9A2F9A81BC9534B0058B7CD /* Track+CoreDataProperties.swift */,
+				B9A2F9A91BC9534B0058B7CD /* Track.swift */,
+				B9C8D63C1BC169A3003B90DC /* TalkSlot+CoreDataProperties.swift */,
+				B9C8D63D1BC169A3003B90DC /* TalkSlot.swift */,
+				B9C8D63E1BC169A3003B90DC /* Speaker+CoreDataProperties.swift */,
+				B9C8D63F1BC169A3003B90DC /* Speaker.swift */,
+				B9C8D6401BC169A3003B90DC /* Slot+CoreDataProperties.swift */,
+				B9C8D6411BC169A3003B90DC /* Slot.swift */,
+				B9C8D6421BC169A3003B90DC /* Conference+CoreDataProperties.swift */,
+				B9C8D6431BC169A3003B90DC /* Conference.swift */,
+				B9C8D6441BC169A3003B90DC /* BreakSlot+CoreDataProperties.swift */,
+				B9C8D6451BC169A3003B90DC /* BreakSlot.swift */,
+				B9C8D6461BC169A3003B90DC /* Schedule+CoreDataProperties.swift */,
+				B9C8D6471BC169A3003B90DC /* Schedule.swift */,
+			);
+			name = ManagedObjects;
+			sourceTree = "<group>";
+		};
+		B9EF04591BCAC8CD003D3889 /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				B9EF045A1BCAC8CD003D3889 /* BreakSlot+CoreDataProperties.swift */,
+				B9EF045B1BCAC8CD003D3889 /* BreakSlot.swift */,
+				B9EF045C1BCAC8CD003D3889 /* Conference+CoreDataProperties.swift */,
+				B9EF045D1BCAC8CD003D3889 /* Conference.swift */,
+				B9EF045E1BCAC8CD003D3889 /* Schedule+CoreDataProperties.swift */,
+				B9EF045F1BCAC8CD003D3889 /* Schedule.swift */,
+				B9EF04601BCAC8CD003D3889 /* Slot+CoreDataProperties.swift */,
+				B9EF04611BCAC8CD003D3889 /* Slot.swift */,
+				B9EF04621BCAC8CD003D3889 /* Speaker+CoreDataProperties.swift */,
+				B9EF04631BCAC8CD003D3889 /* Speaker.swift */,
+				B9EF04641BCAC8CD003D3889 /* TalkSlot+CoreDataProperties.swift */,
+				B9EF04651BCAC8CD003D3889 /* TalkSlot.swift */,
+				B9EF04661BCAC8CD003D3889 /* Track+CoreDataProperties.swift */,
+				B9EF04671BCAC8CD003D3889 /* Track.swift */,
+			);
+			path = ManagedObjects;
+			sourceTree = "<group>";
+		};
+		B9F15BDD1B8A051600A04FFC = {
+			isa = PBXGroup;
+			children = (
+				B9F15C4E1B8A0A7300A04FFC /* README.md */,
+				B9F15BE81B8A051600A04FFC /* Smartvoxx */,
+				B9F15BFF1B8A051600A04FFC /* SmartvoxxTests */,
+				B9F15C0A1B8A051600A04FFC /* SmartvoxxUITests */,
+				B9F15C531B8A0F1700A04FFC /* SmartvoxxOnWrist */,
+				B9F15C621B8A0F1700A04FFC /* SmartvoxxOnWrist Extension */,
+				B9F15BE71B8A051600A04FFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9F15BE71B8A051600A04FFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9F15BE61B8A051600A04FFC /* Smartvoxx.app */,
+				B9F15BFC1B8A051600A04FFC /* SmartvoxxTests.xctest */,
+				B9F15C071B8A051600A04FFC /* SmartvoxxUITests.xctest */,
+				B9F15C521B8A0F1700A04FFC /* SmartvoxxOnWrist.app */,
+				B9F15C5E1B8A0F1700A04FFC /* SmartvoxxOnWrist Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9F15BE81B8A051600A04FFC /* Smartvoxx */ = {
+			isa = PBXGroup;
+			children = (
+				B963D9D71BE21E4300A28181 /* CoreData.framework */,
+				B9EF04591BCAC8CD003D3889 /* ManagedObjects */,
+				B99FA7BB1BB72AF400807789 /* Smartvoxx.entitlements */,
+				B9F15BE91B8A051600A04FFC /* AppDelegate.swift */,
+				B9F15BEB1B8A051600A04FFC /* MasterViewController.swift */,
+				B9F15C4A1B8A06CC00A04FFC /* ScheduleViewController.swift */,
+				B90FFB291BB83DC000EF13E7 /* SlotViewController.swift */,
+				B9F15BEF1B8A051600A04FFC /* Main.storyboard */,
+				B9F15BF21B8A051600A04FFC /* Assets.xcassets */,
+				B9F15BF41B8A051600A04FFC /* LaunchScreen.storyboard */,
+				B9F15BF71B8A051600A04FFC /* Info.plist */,
+				B9EF04771BCAC8FD003D3889 /* Smartvoxx.xcdatamodeld */,
+				B9BFE13A1BDE02B000279F09 /* DataController.swift */,
+				B9BFE13C1BDE03EC00279F09 /* DevoxxCache.swift */,
+			);
+			path = Smartvoxx;
+			sourceTree = "<group>";
+		};
+		B9F15BFF1B8A051600A04FFC /* SmartvoxxTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9F15C001B8A051600A04FFC /* SmartvoxxTests.swift */,
+				B9F15C021B8A051600A04FFC /* Info.plist */,
+			);
+			path = SmartvoxxTests;
+			sourceTree = "<group>";
+		};
+		B9F15C0A1B8A051600A04FFC /* SmartvoxxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B9F15C0B1B8A051600A04FFC /* SmartvoxxUITests.swift */,
+				B9F15C0D1B8A051600A04FFC /* Info.plist */,
+			);
+			path = SmartvoxxUITests;
+			sourceTree = "<group>";
+		};
+		B9F15C531B8A0F1700A04FFC /* SmartvoxxOnWrist */ = {
+			isa = PBXGroup;
+			children = (
+				B90FFB271BB731B200EF13E7 /* SmartvoxxOnWrist.entitlements */,
+				B9F15C541B8A0F1700A04FFC /* Interface.storyboard */,
+				B9F15C571B8A0F1700A04FFC /* Assets.xcassets */,
+				B9F15C591B8A0F1700A04FFC /* Info.plist */,
+			);
+			path = SmartvoxxOnWrist;
+			sourceTree = "<group>";
+		};
+		B9F15C621B8A0F1700A04FFC /* SmartvoxxOnWrist Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B9BFE13E1BDEC46A00279F09 /* DevoxxCache.swift */,
+				B9BFE13F1BDEC46A00279F09 /* DataController.swift */,
+				B9C8D60B1BC06D33003B90DC /* ManagedObjects */,
+				B90FFB281BB731C800EF13E7 /* SmartvoxxOnWrist Extension.entitlements */,
+				B9C8D5C21BC016BE003B90DC /* Smartvoxx.xcdatamodeld */,
+				B9F15C671B8A0F1700A04FFC /* ExtensionDelegate.swift */,
+				B9F15C6D1B8A0F1700A04FFC /* ComplicationController.swift */,
+				B9F15C651B8A0F1700A04FFC /* InterfaceController.swift */,
+				B91995C41BA5C8E400FEB34C /* ScheduleController.swift */,
+				B99FA7B31BB6D9B900807789 /* SlotController.swift */,
+				B99FA7B71BB6E20E00807789 /* SpeakerController.swift */,
+				B9F15C691B8A0F1700A04FFC /* NotificationController.swift */,
+				B9F15C6B1B8A0F1700A04FFC /* GlanceController.swift */,
+				B9E543C71B9B8B430089AAF5 /* ScheduleRowController.swift */,
+				B917BF421BA8CAF000607458 /* TimeRangeRowController.swift */,
+				B917BF441BA8CB1500607458 /* SlotRowController.swift */,
+				B99FA7B51BB6DA3B00807789 /* SpeakerRowController.swift */,
+				B99FA7B11BB6D0AA00807789 /* UIColorExtension.swift */,
+				B9F15C6F1B8A0F1700A04FFC /* Assets.xcassets */,
+				B9F15C711B8A0F1700A04FFC /* Info.plist */,
+				B9F15C631B8A0F1700A04FFC /* Supporting Files */,
+			);
+			path = "SmartvoxxOnWrist Extension";
+			sourceTree = "<group>";
+		};
+		B9F15C631B8A0F1700A04FFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9F15C641B8A0F1700A04FFC /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9F15BE51B8A051600A04FFC /* Smartvoxx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9F15C101B8A051600A04FFC /* Build configuration list for PBXNativeTarget "Smartvoxx" */;
+			buildPhases = (
+				B9F15BE21B8A051600A04FFC /* Sources */,
+				B9F15BE31B8A051600A04FFC /* Frameworks */,
+				B9F15BE41B8A051600A04FFC /* Resources */,
+				B9F15C7C1B8A0F1700A04FFC /* Embed Watch Content */,
+				B98CBD0F1B9B867700518E04 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9F15C731B8A0F1700A04FFC /* PBXTargetDependency */,
+			);
+			name = Smartvoxx;
+			productName = Smartvoxx;
+			productReference = B9F15BE61B8A051600A04FFC /* Smartvoxx.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9F15BFB1B8A051600A04FFC /* SmartvoxxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9F15C131B8A051600A04FFC /* Build configuration list for PBXNativeTarget "SmartvoxxTests" */;
+			buildPhases = (
+				B9F15BF81B8A051600A04FFC /* Sources */,
+				B9F15BF91B8A051600A04FFC /* Frameworks */,
+				B9F15BFA1B8A051600A04FFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9F15BFE1B8A051600A04FFC /* PBXTargetDependency */,
+			);
+			name = SmartvoxxTests;
+			productName = SmartvoxxTests;
+			productReference = B9F15BFC1B8A051600A04FFC /* SmartvoxxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B9F15C061B8A051600A04FFC /* SmartvoxxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9F15C161B8A051600A04FFC /* Build configuration list for PBXNativeTarget "SmartvoxxUITests" */;
+			buildPhases = (
+				B9F15C031B8A051600A04FFC /* Sources */,
+				B9F15C041B8A051600A04FFC /* Frameworks */,
+				B9F15C051B8A051600A04FFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9F15C091B8A051600A04FFC /* PBXTargetDependency */,
+			);
+			name = SmartvoxxUITests;
+			productName = SmartvoxxUITests;
+			productReference = B9F15C071B8A051600A04FFC /* SmartvoxxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B9F15C511B8A0F1700A04FFC /* SmartvoxxOnWrist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9F15C791B8A0F1700A04FFC /* Build configuration list for PBXNativeTarget "SmartvoxxOnWrist" */;
+			buildPhases = (
+				B9F15C501B8A0F1700A04FFC /* Resources */,
+				B9F15C781B8A0F1700A04FFC /* Embed App Extensions */,
+				B98CBCD81B9B7C9100518E04 /* Frameworks */,
+				B98CBCDC1B9B7C9100518E04 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9F15C611B8A0F1700A04FFC /* PBXTargetDependency */,
+			);
+			name = SmartvoxxOnWrist;
+			productName = SmartvoxxOnWrist;
+			productReference = B9F15C521B8A0F1700A04FFC /* SmartvoxxOnWrist.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B9F15C5D1B8A0F1700A04FFC /* SmartvoxxOnWrist Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9F15C751B8A0F1700A04FFC /* Build configuration list for PBXNativeTarget "SmartvoxxOnWrist Extension" */;
+			buildPhases = (
+				B9F15C5A1B8A0F1700A04FFC /* Sources */,
+				B9F15C5B1B8A0F1700A04FFC /* Frameworks */,
+				B9F15C5C1B8A0F1700A04FFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SmartvoxxOnWrist Extension";
+			productName = "SmartvoxxOnWrist Extension";
+			productReference = B9F15C5E1B8A0F1700A04FFC /* SmartvoxxOnWrist Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9F15BDE1B8A051600A04FFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Epseelon;
+				TargetAttributes = {
+					B9F15BE51B8A051600A04FFC = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = HLAKBN9F84;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					B9F15BFB1B8A051600A04FFC = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = B9F15BE51B8A051600A04FFC;
+					};
+					B9F15C061B8A051600A04FFC = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = B9F15BE51B8A051600A04FFC;
+					};
+					B9F15C511B8A0F1700A04FFC = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = HLAKBN9F84;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					B9F15C5D1B8A0F1700A04FFC = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = HLAKBN9F84;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = B9F15BE11B8A051600A04FFC /* Build configuration list for PBXProject "Smartvoxx" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9F15BDD1B8A051600A04FFC;
+			productRefGroup = B9F15BE71B8A051600A04FFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9F15BE51B8A051600A04FFC /* Smartvoxx */,
+				B9F15BFB1B8A051600A04FFC /* SmartvoxxTests */,
+				B9F15C061B8A051600A04FFC /* SmartvoxxUITests */,
+				B9F15C511B8A0F1700A04FFC /* SmartvoxxOnWrist */,
+				B9F15C5D1B8A0F1700A04FFC /* SmartvoxxOnWrist Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9F15BE41B8A051600A04FFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9F15BF61B8A051600A04FFC /* LaunchScreen.storyboard in Resources */,
+				B9F15BF31B8A051600A04FFC /* Assets.xcassets in Resources */,
+				B9F15BF11B8A051600A04FFC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9F15BFA1B8A051600A04FFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9F15C051B8A051600A04FFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9F15C501B8A0F1700A04FFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9F15C581B8A0F1700A04FFC /* Assets.xcassets in Resources */,
+				B9F15C561B8A0F1700A04FFC /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9F15C5C1B8A0F1700A04FFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9F15C701B8A0F1700A04FFC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9F15BE21B8A051600A04FFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9EF046C1BCAC8CD003D3889 /* Conference.swift in Sources */,
+				B9F15BEC1B8A051600A04FFC /* MasterViewController.swift in Sources */,
+				B9EF046E1BCAC8CD003D3889 /* Schedule.swift in Sources */,
+				B9EF046D1BCAC8CD003D3889 /* Schedule+CoreDataProperties.swift in Sources */,
+				B9EF04761BCAC8CD003D3889 /* Track.swift in Sources */,
+				B9EF046B1BCAC8CD003D3889 /* Conference+CoreDataProperties.swift in Sources */,
+				B9EF04791BCAC8FD003D3889 /* Smartvoxx.xcdatamodeld in Sources */,
+				B9BFE13B1BDE02B000279F09 /* DataController.swift in Sources */,
+				B9EF046F1BCAC8CD003D3889 /* Slot+CoreDataProperties.swift in Sources */,
+				B9EF04711BCAC8CD003D3889 /* Speaker+CoreDataProperties.swift in Sources */,
+				B90FFB2A1BB83DC000EF13E7 /* SlotViewController.swift in Sources */,
+				B9EF04741BCAC8CD003D3889 /* TalkSlot.swift in Sources */,
+				B9F15C4B1B8A06CC00A04FFC /* ScheduleViewController.swift in Sources */,
+				B9BFE13D1BDE03EC00279F09 /* DevoxxCache.swift in Sources */,
+				B9EF04751BCAC8CD003D3889 /* Track+CoreDataProperties.swift in Sources */,
+				B9EF046A1BCAC8CD003D3889 /* BreakSlot.swift in Sources */,
+				B9F15BEA1B8A051600A04FFC /* AppDelegate.swift in Sources */,
+				B9EF04721BCAC8CD003D3889 /* Speaker.swift in Sources */,
+				B9EF04691BCAC8CD003D3889 /* BreakSlot+CoreDataProperties.swift in Sources */,
+				B9EF04701BCAC8CD003D3889 /* Slot.swift in Sources */,
+				B9EF04731BCAC8CD003D3889 /* TalkSlot+CoreDataProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9F15BF81B8A051600A04FFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9F15C011B8A051600A04FFC /* SmartvoxxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9F15C031B8A051600A04FFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9F15C0C1B8A051600A04FFC /* SmartvoxxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9F15C5A1B8A0F1700A04FFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9F15C6A1B8A0F1700A04FFC /* NotificationController.swift in Sources */,
+				B9A2F9AA1BC9534B0058B7CD /* Track+CoreDataProperties.swift in Sources */,
+				B9F15C681B8A0F1700A04FFC /* ExtensionDelegate.swift in Sources */,
+				B9F15C6E1B8A0F1700A04FFC /* ComplicationController.swift in Sources */,
+				B99FA7B21BB6D0AA00807789 /* UIColorExtension.swift in Sources */,
+				B99FA7B61BB6DA3B00807789 /* SpeakerRowController.swift in Sources */,
+				B9C8D64F1BC169A3003B90DC /* Conference.swift in Sources */,
+				B9C8D64A1BC169A3003B90DC /* Speaker+CoreDataProperties.swift in Sources */,
+				B9E543C81B9B8B430089AAF5 /* ScheduleRowController.swift in Sources */,
+				B9C8D6481BC169A3003B90DC /* TalkSlot+CoreDataProperties.swift in Sources */,
+				B9C8D6511BC169A3003B90DC /* BreakSlot.swift in Sources */,
+				B9C8D6521BC169A3003B90DC /* Schedule+CoreDataProperties.swift in Sources */,
+				B9C8D64C1BC169A3003B90DC /* Slot+CoreDataProperties.swift in Sources */,
+				B9C8D64D1BC169A3003B90DC /* Slot.swift in Sources */,
+				B9C8D6531BC169A3003B90DC /* Schedule.swift in Sources */,
+				B9C8D5C41BC016BE003B90DC /* Smartvoxx.xcdatamodeld in Sources */,
+				B9F15C661B8A0F1700A04FFC /* InterfaceController.swift in Sources */,
+				B99FA7B81BB6E20E00807789 /* SpeakerController.swift in Sources */,
+				B9C8D64B1BC169A3003B90DC /* Speaker.swift in Sources */,
+				B9C8D6491BC169A3003B90DC /* TalkSlot.swift in Sources */,
+				B91995C51BA5C8E400FEB34C /* ScheduleController.swift in Sources */,
+				B917BF431BA8CAF000607458 /* TimeRangeRowController.swift in Sources */,
+				B9BFE1401BDEC46A00279F09 /* DevoxxCache.swift in Sources */,
+				B9C8D64E1BC169A3003B90DC /* Conference+CoreDataProperties.swift in Sources */,
+				B917BF451BA8CB1500607458 /* SlotRowController.swift in Sources */,
+				B9BFE1411BDEC46A00279F09 /* DataController.swift in Sources */,
+				B9F15C6C1B8A0F1700A04FFC /* GlanceController.swift in Sources */,
+				B9A2F9AB1BC9534B0058B7CD /* Track.swift in Sources */,
+				B99FA7B41BB6D9B900807789 /* SlotController.swift in Sources */,
+				B9C8D6501BC169A3003B90DC /* BreakSlot+CoreDataProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9F15BFE1B8A051600A04FFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9F15BE51B8A051600A04FFC /* Smartvoxx */;
+			targetProxy = B9F15BFD1B8A051600A04FFC /* PBXContainerItemProxy */;
+		};
+		B9F15C091B8A051600A04FFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9F15BE51B8A051600A04FFC /* Smartvoxx */;
+			targetProxy = B9F15C081B8A051600A04FFC /* PBXContainerItemProxy */;
+		};
+		B9F15C611B8A0F1700A04FFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9F15C5D1B8A0F1700A04FFC /* SmartvoxxOnWrist Extension */;
+			targetProxy = B9F15C601B8A0F1700A04FFC /* PBXContainerItemProxy */;
+		};
+		B9F15C731B8A0F1700A04FFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9F15C511B8A0F1700A04FFC /* SmartvoxxOnWrist */;
+			targetProxy = B9F15C721B8A0F1700A04FFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B9F15BEF1B8A051600A04FFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9F15BF01B8A051600A04FFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B9F15BF41B8A051600A04FFC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9F15BF51B8A051600A04FFC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B9F15C541B8A0F1700A04FFC /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9F15C551B8A0F1700A04FFC /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9F15C0E1B8A051600A04FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B9F15C0F1B8A051600A04FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9F15C111B8A051600A04FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Smartvoxx/Smartvoxx.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Smartvoxx/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.epseelon.Smartvoxx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		B9F15C121B8A051600A04FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Smartvoxx/Smartvoxx.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Smartvoxx/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.epseelon.Smartvoxx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		B9F15C141B8A051600A04FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmartvoxxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.epseelon.SmartvoxxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smartvoxx.app/Smartvoxx";
+			};
+			name = Debug;
+		};
+		B9F15C151B8A051600A04FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmartvoxxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.epseelon.SmartvoxxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smartvoxx.app/Smartvoxx";
+			};
+			name = Release;
+		};
+		B9F15C171B8A051600A04FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SmartvoxxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.epseelon.SmartvoxxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Smartvoxx;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B9F15C181B8A051600A04FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SmartvoxxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.epseelon.SmartvoxxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Smartvoxx;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		B9F15C761B8A0F1700A04FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "SmartvoxxOnWrist Extension/SmartvoxxOnWrist Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "SmartvoxxOnWrist Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.epseelon.Smartvoxx.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		B9F15C771B8A0F1700A04FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "SmartvoxxOnWrist Extension/SmartvoxxOnWrist Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "SmartvoxxOnWrist Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.epseelon.Smartvoxx.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		B9F15C7A1B8A0F1700A04FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SmartvoxxOnWrist/SmartvoxxOnWrist.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				IBSC_MODULE = SmartvoxxOnWrist_Extension;
+				INFOPLIST_FILE = SmartvoxxOnWrist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.epseelon.Smartvoxx.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		B9F15C7B1B8A0F1700A04FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SmartvoxxOnWrist/SmartvoxxOnWrist.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				IBSC_MODULE = SmartvoxxOnWrist_Extension;
+				INFOPLIST_FILE = SmartvoxxOnWrist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.epseelon.Smartvoxx.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9F15BE11B8A051600A04FFC /* Build configuration list for PBXProject "Smartvoxx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9F15C0E1B8A051600A04FFC /* Debug */,
+				B9F15C0F1B8A051600A04FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9F15C101B8A051600A04FFC /* Build configuration list for PBXNativeTarget "Smartvoxx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9F15C111B8A051600A04FFC /* Debug */,
+				B9F15C121B8A051600A04FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9F15C131B8A051600A04FFC /* Build configuration list for PBXNativeTarget "SmartvoxxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9F15C141B8A051600A04FFC /* Debug */,
+				B9F15C151B8A051600A04FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9F15C161B8A051600A04FFC /* Build configuration list for PBXNativeTarget "SmartvoxxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9F15C171B8A051600A04FFC /* Debug */,
+				B9F15C181B8A051600A04FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9F15C751B8A0F1700A04FFC /* Build configuration list for PBXNativeTarget "SmartvoxxOnWrist Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9F15C761B8A0F1700A04FFC /* Debug */,
+				B9F15C771B8A0F1700A04FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9F15C791B8A0F1700A04FFC /* Build configuration list for PBXNativeTarget "SmartvoxxOnWrist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9F15C7A1B8A0F1700A04FFC /* Debug */,
+				B9F15C7B1B8A0F1700A04FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B9C8D5C21BC016BE003B90DC /* Smartvoxx.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B9C8D5C31BC016BE003B90DC /* Smartvoxx.xcdatamodel */,
+			);
+			currentVersion = B9C8D5C31BC016BE003B90DC /* Smartvoxx.xcdatamodel */;
+			path = Smartvoxx.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		B9EF04771BCAC8FD003D3889 /* Smartvoxx.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B9EF04781BCAC8FD003D3889 /* Smartvoxx.xcdatamodel */,
+			);
+			currentVersion = B9EF04781BCAC8FD003D3889 /* Smartvoxx.xcdatamodel */;
+			path = Smartvoxx.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B9F15BDE1B8A051600A04FFC /* Project object */;
+}
